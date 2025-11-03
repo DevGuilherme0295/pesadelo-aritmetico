@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://brrnc6odbkgo5"]
+
+[ext_resource type="PackedScene" uid="uid://b4hkwwi0txwwr" path="res://CENAS/aluno.tscn" id="1_0mef1"]
+[ext_resource type="Texture2D" uid="uid://bvgohbhpxi57i" path="res://ASSESTS/CENARIO/caverna.png" id="2_1bgn6"]
+
+[sub_resource type="TileSet" id="TileSet_0mef1"]
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 13
+
+[node name="Caverna" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_0mef1")
+
+[node name="Aluno" parent="." instance=ExtResource("1_0mef1")]
+position = Vector2(0, -11)
+scale = Vector2(0.35, 0.35)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -15
+position = Vector2(472, -225)
+scale = Vector2(1.65, 1.65)
+texture = ExtResource("2_1bgn6")

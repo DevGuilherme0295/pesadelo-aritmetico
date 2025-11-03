@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-class_name Player
+class_name Aluno
 
 @export_group("Locomotion")
 @export var speed = 150.0

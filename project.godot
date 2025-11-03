@@ -11,7 +11,6 @@ config_version=5
 [application]
 
 config/name="Pesadelos Aritmeticos"
-run/main_scene="uid://pedavjs42v18"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
